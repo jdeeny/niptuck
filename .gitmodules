@@ -1,0 +1,4 @@
+[submodule "lib/treble"]
+	path = lib/treble
+	url = https://github.com/jdeeny/treble.git
+	ignore = dirty
