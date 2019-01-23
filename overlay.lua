@@ -1,8 +1,15 @@
-local class = require 'lib.middleclass'
+package.path = "../?.lua;" .. package.path
+
+local class = require 'lib.middleclass.middleclass'
 
 local Overlay = class('MidiOverlay')
 
-function Overlay:initialize()
+function Overlay:initialize(font)
+  self.font = font or require('roboto')
+end
+
+function Overlay:update(dt)
+
 end
 
 function Overlay:draw()

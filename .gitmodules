@@ -2,3 +2,6 @@
 	path = lib/treble
 	url = https://github.com/jdeeny/treble.git
 	ignore = dirty
+[submodule "lib/middleclass"]
+	path = lib/middleclass
+	url = https://github.com/kikito/middleclass.git
