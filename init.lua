@@ -1,6 +1,7 @@
 --package.path = "../?.lua;" .. package.path
-
-local Niptuck = {}
+local Niptuck = {
+  controller = require('controller'),
+}
 
 function Niptuck.update(dt)
   Niptuck.overlay:update(dt)
@@ -12,5 +13,5 @@ end
 
 
 --Niptuck.xtouchmini = require 'xtouchmini'
-Niptuck.overlay = require 'overlay'
+Niptuck.overlay = require('overlay'):new()
 return Niptuck

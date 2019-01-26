@@ -23,17 +23,17 @@
     Read Value [ Read CC9 (A) CC10 (B)]
 ]]
 
-local Messages = require 'midicontrol.messages'
+local Messages = require 'lib.treble.messages'
 local NoteOff = Messages.NoteOff
 local NoteOn = Messages.NoteOn
-local Layout = require 'midicontrol.controls.layout'
-local Button = require 'midicontrol.controls.button'
-local Knob = require 'midicontrol.controls.knob'
+local Layout = require 'controller.controls.layout'
+local Button = require 'controller.controls.button'
+local Knob = require 'controller.controls.knob'
 
 local Mini = {
   name = "X-TOUCH MINI",
   size = { 11, 4 },
-  controls = require('midicontrol.controls.layout'):new()
+  controls = Layout:new()
               :addControl(Button:new("Button 1", NoteOn(8), NoteOff(8), NoteOn(0)), 2, 1)
               :addControl(Button:new("Button 2", NoteOn(9), NoteOff(8), NoteOn(1)), 2, 2)
               :addControl(Button:new("Button 3", NoteOn(10), NoteOff(8), NoteOn(2)), 2, 3),

@@ -1,5 +1,5 @@
-local class = require 'lib.middleclass'
-local Control = require 'midicontrol.controls.control'
+local class = require 'lib.middleclass.middleclass'
+local Control = require 'controller.controls.control'
 
 local Button = class('MidiButton', Control)
 
