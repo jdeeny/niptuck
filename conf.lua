@@ -1,5 +1,5 @@
 function love.conf(t)
-    t.identity = 'runout'               -- The name of the save directory (string)
+    t.identity = 'niptuck'               -- The name of the save directory (string)
     t.appendidentity = false            -- Search files in source directory before save directory (boolean)
     t.version = "11.2"                  -- The LÖVE version this game was made for (string)
     t.console = false                    -- Attach a console (boolean, Windows only)
@@ -9,7 +9,7 @@ function love.conf(t)
 
     t.audio.mixwithsystem = true        -- Keep background music playing when opening LOVE (boolean, iOS and Android only)
 
-    t.window.title = "Runout"           -- The window title (string)
+    t.window.title = "Test"           -- The window title (string)
     t.window.icon = nil                 -- Filepath to an image to use as the window's icon (string)
     t.window.width = 1280                -- The window width (number)
     t.window.height = 720               -- The window height (number)
